@@ -1,0 +1,15 @@
+<div class="subtotal" *ngIf="cartService.getProductsCount()>0">
+
+  <p [ngSwitch]="cartService.getProductsCount()">
+    <span *ngSwitchCase="1">Subtotal ({{cartService.getProductsCount()}} item) : </span>
+    <span *ngSwitchDefault>Subtotal ({{cartService.getProductsCount()}} items) : </span>
+    <strong>${{cartService.getTotalPrice()}}</strong>
+  </p>
+
+  <div class="subtotal-gift">
+    <input type="checkbox">
+    <p>This order contains a gift</p>
+  </div>
+  <button>Proceed to checkout</button>
+  
+</div>

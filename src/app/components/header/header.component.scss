@@ -1,0 +1,119 @@
+.header{
+  position: sticky;
+  top:0; 
+  z-index:100;
+}
+
+.navbar-top{
+  height:60px;
+  background-color: #131921;
+  font-size: 14px;
+  display: flex;
+  color:white;
+  padding-right:8px ;
+  padding-bottom: 8px;
+}
+
+.navbar-menu{
+  display: flex;
+  padding:10px 8px 8px 8px;
+  width:100%;
+}
+
+.navbar-menu>div{
+  margin: 8px;
+}
+
+.navbar-amazon-logo{
+  object-fit: contain;
+  width:100px;
+  margin: 12px 20px 0px 2px;
+}
+
+.menu-icon-container{
+  display: flex;
+  
+  mat-icon{
+    font-size:30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar-search-bar-container{
+  display: flex;
+  margin: 0px !important;
+//   margin-bottom: 0 !important;
+  height: 42px;
+  justify-content: center;
+  flex: 1;
+
+  .navbar-search-input{
+    height:20px;
+    padding:10px;
+    margin:auto;
+    border:none;
+    width: 100%;
+  }
+
+  .search-bar-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  #febd69;
+    height: 40px;
+    width: 40px;
+    color:black;
+    margin: auto;
+  }
+}
+
+.accounts-lists-container,.returns-orders-container{
+  display: flex;
+  flex-direction: column;
+
+  .top-item{
+    font-size: 10px;
+    color:lightgray;
+  }
+
+  .bottom-item{
+    font-size: 13px;
+    font-weight: 800;
+  }
+}
+
+.navbar-cards-container{
+  display: flex;
+  justify-content: space-around;
+//   margin: auto 8px !important;
+//   height: 32px;
+}
+
+.card-number{
+  color: #febd69;
+  font-size: 25px;
+  font-weight: 800;
+  margin:auto;
+}
+
+.navbar-bottom{
+  height:49px;
+//   background-image: none;
+  background-color: #232f3e;
+  padding-left: 8px;
+  font-size:12px;
+}
+
+.location-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+

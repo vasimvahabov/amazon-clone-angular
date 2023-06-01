@@ -1,0 +1,50 @@
+<div class="header">
+  <nav class="navbar-top">
+    <div class="navbar-menu">
+      
+      <div class="menu-icon-container" routerLink="/">
+        <mat-icon aria-hidden="false" aria-label="Example menu icon" fontIcon="menu"></mat-icon>
+      </div>
+      
+      <img routerLink="/" src="../../../assets/amazon_navbar_logo.png" class="navbar-amazon-logo">
+
+      <div class="navbar-search-bar-container">
+        <input type="text" class="navbar-search-input">
+        <div class="search-bar-icon">
+          <mat-icon aria-hidden="false" aria-label="Example logo icon" fontIcon="search"></mat-icon>
+        </div>
+      </div>
+
+      <div class="accounts-lists-container">
+        <span 
+          (click)="logOut()" 
+          class="top-item" 
+          *ngIf="authService.isLoggedIn()"
+        >Hello, {{authService.getUser()}}</span>
+        <span routerLink="/login" class="top-item" *ngIf="!authService.isLoggedIn()">
+          Hello, sign in
+        </span>
+        <span class="bottom-item">Accounts & Lists</span>
+      </div>
+
+      <div routerLink="/login" class="returns-orders-container">
+        <span class="top-item">Returns</span> 
+        <span class="bottom-item">& Orders</span>
+      </div>
+
+      <div routerLink="/check-out" class="navbar-cards-container">
+        <mat-icon aria-hidden="false" aria-label="Example shoppind card icon" fontIcon="shopping_cart"></mat-icon>
+        <p class="card-number">{{cartService.getProductsCount()}}</p>
+      </div>
+
+    </div>
+  </nav>
+
+  <nav class="navbar-bottom">
+    <div class="location-container">
+      <span class="location-line-one">Delivery to</span>
+      <span class="location-line-two"><strong>Azerbaijan</strong></span>
+    </div>
+  </nav>
+
+</div>

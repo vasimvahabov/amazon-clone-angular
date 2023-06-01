@@ -1,0 +1,19 @@
+.check-out{
+  display: flex;
+  background: none;
+  width: 100%;
+}
+
+
+.check-out-left{
+  flex:1;
+
+  .check-out-empty{
+    margin: 20px 20px 400px 20px;
+  }
+}
+ 
+.check-out-right{
+  justify-content:flex-end;
+  margin-left: 20px;
+}
